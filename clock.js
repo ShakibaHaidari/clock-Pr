@@ -17,7 +17,8 @@ function updateClock(){
     document.getElementById("clock").innerHTML="current time:" + hour+":"+ minute+":"+second;
    } if(minute==60){
     minute=0;
-   }
+   } 
  
 }
 updateClock();
+setInterval(updateClock,1000);
